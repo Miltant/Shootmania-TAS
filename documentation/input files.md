@@ -1,3 +1,5 @@
+Shootmania-TAS uses .inputs files to store the inputs to load on every physics tick.
+
 # Example
     0 press restart                 # we ensure the run starts at 0.00
     -120 press alt                  # start the alt glitch
