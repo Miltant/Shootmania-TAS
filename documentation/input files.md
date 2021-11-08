@@ -42,7 +42,7 @@ Commas and dots are *ignored*, so you can write eg. `24,256.43` or `24.256,43` i
 
     You can either write:
     - Both these numbers next to each other, eg. `aim 0.856 1.114`;
-    - Only one of these, leaving the other as it was for the previous frame, eg. `aim pitch 0.856` or `aim yaw 1.114`.
+    - Only one of these, leaving the other as it was in the previous frame, eg. `aim pitch 0.856` or `aim yaw 1.114`.
 
 - `fl` starts holding freelook, and `nofl` releases it.
 - `#` introduces a comment. A line that doesn't start with a frame number is automatically considered a comment, regardless of its content.
