@@ -6,6 +6,9 @@ Shootmania-TAS uses .inputs files to store the inputs to load on every physics t
     -43 press w aim yaw -1.24       # ends the alt glitch and starts aiming at the right spot to exit spawn
     0 press jump                    # jumps on the spawn, doesn't release w
     5 press w                       # waits 5 frames to avoid dash jumping
+    10 press nomouse                # releases jump (10 frame = full jump), w is still pressed
+    20 press nokbd                  # releases w, setting up for a kz jump
+    etc.
 
 # Syntax
 An input file consists of (crlf-separated, case sensitive) lines that will be executed sequentially, in order. They are of the form:
@@ -42,4 +45,4 @@ Commas and dots are *ignored*, so you can write eg. `24,256.43` or `24.256,43` i
     - Only one of these, leaving the other as it was for the previous frame, like `aim pitch 0.856` or `aim yaw 1.114`.
 
 - `fl` starts holding freelook, and `nofl` releases it.
-- `#` introduces a comment.
+- `#` introduces a comment. A line that doesn't start with a frame number is automatically considered as a comment, regardless of it starting with # or not.
