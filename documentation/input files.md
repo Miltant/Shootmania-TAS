@@ -8,7 +8,7 @@
 # Syntax
 An input file consists of (crlf-separated, case sensitive) lines that will be executed sequentially, in order. They are of the form:
 
-    124 press s respawn fire aim 0.856 1.114 freelook # respawn bug and setup for the namsei jump
+    124 press s respawn fire aim 0.856 1.114 fl # respawn bug and setup for the namsei jump
 
 Where all of these elements are **optional** (except the **frame number**):
 - `124` is the ***frame** (physics tick) **number***, the first frame of the run being 0, and every frame lasting 0.01 second. This **frame number** asks the TAS engine to wait the `124`th frame of the run to perform the rest of the instructions on this line. Note that the frame number resets if the `restart` key is pressed, and that negative numbers can be used (expected use: alt glitches).
