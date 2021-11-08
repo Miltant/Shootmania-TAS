@@ -1,11 +1,11 @@
 Shootmania-TAS uses .inputs files to store the inputs to load on every physics tick.
 
 # Example
-    0 press restart                 # we ensure the run starts at 0.00
-    -120 press alt                  # start the alt glitch
+    0 press restart                 # we ensure that the run starts at 0.00
+    -120 press alt                  # starts an alt glitch
     -43 press w aim yaw -1.24       # ends the alt glitch and starts aiming at the right spot to exit spawn
-    0 press jump                    # jump on the spawn, doesn't release w
-    5 press w                       # wait 5 frames to avoid the dash jump
+    0 press jump                    # jumps on the spawn, doesn't release w
+    5 press w                       # waits 5 frames to avoid dash jumping
 
 # Syntax
 An input file consists of (crlf-separated, case sensitive) lines that will be executed sequentially, in order. They are of the form:
